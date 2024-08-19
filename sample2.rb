@@ -1,5 +1,7 @@
 class Engine
   # horsepowerは、エンジンの馬力。fuel_typeは燃料の種類。
+  attr_reader :horsepower, :fuel_type
+
   def initialize(horsepower, fuel_type)
     @horsepower = horsepower
     @fuel_type = fuel_type
@@ -11,6 +13,8 @@ class Engine
 end
 
 class Car
+  attr_reader :color, :engine
+
   def initialize(color, engine)
     @color = color
     @engine = engine
